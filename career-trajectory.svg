@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+<title id="title">Career trajectory</title>
+<desc id="desc">Conceptual professional trajectory connecting academic foundations, financial analysis, industry exposure, fintech projects and broader financial systems research.</desc>
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080B10"/><stop offset="1" stop-color="#111821"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF6B35"/><stop offset="1" stop-color="#FF9F43"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F7FA" stop-opacity=".12"/><stop offset=".5" stop-color="#F5F7FA" stop-opacity=".025"/><stop offset="1" stop-color="#FF6B35" stop-opacity=".09"/></linearGradient>
+<radialGradient id="core"><stop stop-color="#FF9F43" stop-opacity=".9"/><stop offset=".25" stop-color="#FF6B35" stop-opacity=".35"/><stop offset="1" stop-color="#FF6B35" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8994A3" stroke-opacity=".08"/></pattern>
+<style>
+.orbit{transform-box:fill-box;transform-origin:center;animation:spin 32s linear infinite}
+.orbit2{transform-box:fill-box;transform-origin:center;animation:spinR 44s linear infinite}
+.pulse{animation:pulse 4.8s ease-in-out infinite}
+.signal{stroke-dasharray:10 18;animation:flow 14s linear infinite}
+.float{animation:float 9s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}} @keyframes spinR{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes flow{to{stroke-dashoffset:-280}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){.orbit,.orbit2,.pulse,.signal,.float{animation:none!important}}
+</style>
+
+</defs>
+
+<rect width="1200" height="380" rx="24" fill="url(#bg)"/><rect width="1200" height="380" rx="24" fill="url(#grid)"/>
+<text x="60" y="64" fill="#F5F7FA" font-family="system-ui" font-size="28" font-weight="700">Career trajectory</text>
+<text x="60" y="90" fill="#8994A3" font-family="system-ui" font-size="12">A developing path — future ambitions are intentionally presented as ambitions.</text>
+<path d="M100 250 C260 250 290 150 450 190 S690 300 820 205 S1030 145 1100 120" fill="none" stroke="#FF6B35" stroke-opacity=".25" stroke-width="10" filter="url(#glow)"/>
+<path class="signal" d="M100 250 C260 250 290 150 450 190 S690 300 820 205 S1030 145 1100 120" fill="none" stroke="#FF9F43" stroke-width="2"/>
+<g class="float" style="animation-delay:0.0s"><circle cx="130" cy="250" r="7" fill="#FF9F43"/><circle cx="130" cy="250" r="20" fill="none" stroke="#FF6B35" stroke-opacity=".2"/><text x="130" y="222" text-anchor="middle" fill="#F5F7FA" font-family="ui-monospace" font-size="10">ACADEMIC</text><text x="130" y="292" text-anchor="middle" fill="#8994A3" font-family="system-ui" font-size="10">Banking management</text></g><g class="float" style="animation-delay:0.4s"><circle cx="380" cy="190" r="7" fill="#FF9F43"/><circle cx="380" cy="190" r="20" fill="none" stroke="#FF6B35" stroke-opacity=".2"/><text x="380" y="162" text-anchor="middle" fill="#F5F7FA" font-family="ui-monospace" font-size="10">ANALYSIS</text><text x="380" y="232" text-anchor="middle" fill="#8994A3" font-family="system-ui" font-size="10">Financial analysis</text></g><g class="float" style="animation-delay:0.8s"><circle cx="650" cy="260" r="7" fill="#FF9F43"/><circle cx="650" cy="260" r="20" fill="none" stroke="#FF6B35" stroke-opacity=".2"/><text x="650" y="232" text-anchor="middle" fill="#F5F7FA" font-family="ui-monospace" font-size="10">INDUSTRY</text><text x="650" y="302" text-anchor="middle" fill="#8994A3" font-family="system-ui" font-size="10">Exposure &amp; practice</text></g><g class="float" style="animation-delay:1.2000000000000002s"><circle cx="860" cy="205" r="7" fill="#FF9F43"/><circle cx="860" cy="205" r="20" fill="none" stroke="#FF6B35" stroke-opacity=".2"/><text x="860" y="177" text-anchor="middle" fill="#F5F7FA" font-family="ui-monospace" font-size="10">FINTECH</text><text x="860" y="247" text-anchor="middle" fill="#8994A3" font-family="system-ui" font-size="10">Projects &amp; research</text></g><g class="float" style="animation-delay:1.6s"><circle cx="1080" cy="120" r="7" fill="#FF9F43"/><circle cx="1080" cy="120" r="20" fill="none" stroke="#FF6B35" stroke-opacity=".2"/><text x="1080" y="92" text-anchor="middle" fill="#F5F7FA" font-family="ui-monospace" font-size="10">SYSTEMS</text><text x="1080" y="162" text-anchor="middle" fill="#8994A3" font-family="system-ui" font-size="10">Broader financial systems</text></g>
+</svg>

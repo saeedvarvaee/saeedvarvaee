@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Capability map</title>
+<desc id="desc">Separate hard-skill topic areas from soft-skill professional competencies without unsupported proficiency ratings.</desc>
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080B10"/><stop offset="1" stop-color="#111821"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF6B35"/><stop offset="1" stop-color="#FF9F43"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F7FA" stop-opacity=".12"/><stop offset=".5" stop-color="#F5F7FA" stop-opacity=".025"/><stop offset="1" stop-color="#FF6B35" stop-opacity=".09"/></linearGradient>
+<radialGradient id="core"><stop stop-color="#FF9F43" stop-opacity=".9"/><stop offset=".25" stop-color="#FF6B35" stop-opacity=".35"/><stop offset="1" stop-color="#FF6B35" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8994A3" stroke-opacity=".08"/></pattern>
+<style>
+.orbit{transform-box:fill-box;transform-origin:center;animation:spin 32s linear infinite}
+.orbit2{transform-box:fill-box;transform-origin:center;animation:spinR 44s linear infinite}
+.pulse{animation:pulse 4.8s ease-in-out infinite}
+.signal{stroke-dasharray:10 18;animation:flow 14s linear infinite}
+.float{animation:float 9s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}} @keyframes spinR{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes flow{to{stroke-dashoffset:-280}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){.orbit,.orbit2,.pulse,.signal,.float{animation:none!important}}
+</style>
+
+</defs>
+
+<rect width="1200" height="520" rx="24" fill="url(#bg)"/><rect width="1200" height="520" rx="24" fill="url(#grid)"/>
+<text x="60" y="68" fill="#F5F7FA" font-family="system-ui" font-size="30" font-weight="700">Capability map</text>
+<text x="60" y="94" fill="#8994A3" font-family="system-ui" font-size="13">Topic areas and professional competencies — not proficiency scores.</text>
+<g transform="translate(330 265)">
+<circle r="155" fill="none" stroke="#8994A3" stroke-opacity=".18"/><circle r="110" fill="none" stroke="#FF6B35" stroke-opacity=".32"/><circle r="62" fill="none" stroke="#FF9F43" stroke-opacity=".4"/>
+<path d="M-155 0H155M0-155V155M-110-110L110 110M110-110L-110 110" stroke="#8994A3" stroke-opacity=".1"/>
+<circle r="8" fill="#FF9F43"/>
+</g>
+<g font-family="ui-monospace" font-size="11" fill="#F5F7FA">
+<text x="520" y="135">HARD SKILLS</text><text x="520" y="158" fill="#8994A3">Finance &amp; banking</text><text x="520" y="180">Financial statement analysis</text><text x="520" y="200">DCF &amp; comparable analysis</text><text x="520" y="220">Financial research</text><text x="520" y="240">FinTech &amp; digital finance</text><text x="520" y="260">Blockchain &amp; RWA concepts</text><text x="520" y="280">Spreadsheet analysis</text><text x="520" y="300">Git / GitHub / Markdown</text>
+<text x="860" y="135">SOFT SKILLS</text><text x="860" y="158" fill="#8994A3">Professional competencies</text><text x="860" y="180">Strategic thinking</text><text x="860" y="200">Systems thinking</text><text x="860" y="220">Problem structuring</text><text x="860" y="240">Communication</text><text x="860" y="260">Leadership &amp; initiative</text><text x="860" y="280">Negotiation &amp; networking</text><text x="860" y="300">Project coordination</text>
+</g>
+<g fill="#FF6B35" font-family="ui-monospace" font-size="9"><text x="255" y="100">ANALYSIS</text><text x="180" y="430">SYSTEMS</text><text x="430" y="430">EXECUTION</text></g>
+
+</svg>
